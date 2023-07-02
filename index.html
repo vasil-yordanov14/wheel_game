@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="./assets/icons8-color-wheel-32.png"
+      type="image/icon type"
+    />
+    <title>Spinning Wheel Game</title>
+  </head>
+  <body>
+    <audio src="./assets/success_bell-6776.mp3" id="win-audio"></audio>
+    <audio src="./assets/-21660.mp3" id="free-spins-audio"></audio>
+    <audio
+      src="./assets/228047-a7c4d017-d4eb-4b46-8c07-e6de87c6299c.mp3"
+      id="rotating-audio"
+    ></audio>
+    <div class="main-container">
+      <div class="container">
+        <button class="spin-button" enabled>Spin</button>
+        <div class="arrow"></div>
+        <div class="wheel">
+          <div class="prize" style="--width: 1"><span>20 $</span></div>
+          <div class="prize" style="--width: 2"><span>5000 $</span></div>
+          <div class="prize" style="--width: 3"><span>300 $</span></div>
+          <div class="prize" style="--width: 4"><span>1000 $</span></div>
+          <div class="prize" style="--width: 5"><span>50 $</span></div>
+          <div class="prize" style="--width: 6"><span>600 $</span></div>
+          <div class="prize" style="--width: 7"><span>70 $</span></div>
+          <div class="prize" style="--width: 8"><span>1800 $</span></div>
+          <div class="prize" style="--width: 9"><span>90$</span></div>
+          <div class="prize" style="--width: 10"><span>4000 $</span></div>
+          <div class="prize" style="--width: 11"><span>10 $</span></div>
+          <div class="prize free-spins" id="free-spins" style="--width: 12">
+            <span class="free-spins-text">free spins</span>
+          </div>
+        </div>
+      </div>
+      <div class="win-container">
+        <h2>you won</h2>
+        <p></p>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
